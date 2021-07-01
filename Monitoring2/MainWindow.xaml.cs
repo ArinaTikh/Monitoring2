@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Monitoring2
 {
@@ -47,16 +36,44 @@ namespace Monitoring2
 
         private void Date_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+        private void rezult_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
 
         private void chek_Click(object sender, RoutedEventArgs e)
         {
-            DateTime time = Date();
+            int maxim = Convert.ToInt32(Max);
+            int minim = Convert.ToInt32(Min);
+
+            int data1 = Convert.ToInt32(Date);
+            DateTime dateTime = new DateTime(data1);
+
+            int temperature = Convert.ToInt32(temperate);
+            int[] zhach = new int[maxim];
+            int[] zhachmin = new int[minim];
+            int[] temp = new int[temperature];
+            foreach (int a in temp)
+            {
+                if (a > maxim || a < minim)
+                {
+                    dateTime.AddMinutes(10);
+                }
+                MessageBox.Show("Превышение температуры");
+            }
+
+
         }
+
+       
     }
 }

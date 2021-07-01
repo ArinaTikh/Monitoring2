@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Monitoring2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="600
+        Title="MainWindow" Height="550" Width="500
         ">
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="Date" HorizontalAlignment="Left" Height="31" Margin="28,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="261" TextChanged="Date_TextChanged"/>
-        <Label Content="Дата" HorizontalAlignment="Left" Height="36" Margin="28,195,0,0" VerticalAlignment="Top" Width="84" FontSize="20"/>
-        <Label Content="Температура" HorizontalAlignment="Left" Height="36" Margin="28,289,0,0" VerticalAlignment="Top" Width="161" FontSize="20"/>
-        <TextBox x:Name="temperate" HorizontalAlignment="Left" Height="31" Margin="28,345,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="261" TextChanged="TextBox_TextChanged"/>
-        <Button x:Name="chek" Content="Рассчитать" HorizontalAlignment="Left" Height="38" Margin="28,423,0,0" VerticalAlignment="Top" Width="261" Click="chek_Click"/>
-        <TextBox x:Name="Max" HorizontalAlignment="Left" Height="37" Margin="94,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" SpellCheck.IsEnabled="True" TextChanged="Max_TextChanged"/>
-        <Label Content="Max" HorizontalAlignment="Left" Height="37" Margin="29,76,0,0" VerticalAlignment="Top" Width="60" FontSize="20"/>
-        <Label Content="Min" HorizontalAlignment="Left" Height="37" Margin="29,136,0,0" VerticalAlignment="Top" Width="60" FontSize="20"/>
-        <TextBox x:Name="Min" HorizontalAlignment="Left" Height="37" Margin="94,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" TextChanged="Min_TextChanged"/>
-        <Label Content="Время" HorizontalAlignment="Left" Height="37" Margin="230,32,0,0" VerticalAlignment="Top" Width="81" FontSize="20"/>
-        <TextBox x:Name="timemax" HorizontalAlignment="Left" Height="37" Margin="230,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" TextChanged="timemax_TextChanged"/>
-        <TextBox x:Name="timemin" HorizontalAlignment="Left" Height="37" Margin="230,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" TextChanged="timemin_TextChanged"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="18*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Date" HorizontalAlignment="Left" Height="31" Margin="33,258,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="261" TextChanged="Date_TextChanged"/>
+        <Label Content="Дата" HorizontalAlignment="Left" Height="36" Margin="33,207,0,0" VerticalAlignment="Top" Width="84" FontSize="20"/>
+        <Label Content="Температура" HorizontalAlignment="Left" Height="36" Margin="33,301,0,0" VerticalAlignment="Top" Width="161" FontSize="20"/>
+        <TextBox x:Name="temperate" HorizontalAlignment="Left" Height="31" Margin="33,357,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="261" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="chek" Content="Рассчитать" HorizontalAlignment="Left" Height="38" Margin="33,417,0,0" VerticalAlignment="Top" Width="261" Click="chek_Click"/>
+        <TextBox x:Name="Max" HorizontalAlignment="Left" Height="37" Margin="99,89,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" SpellCheck.IsEnabled="True" TextChanged="Max_TextChanged"/>
+        <Label Content="Max" HorizontalAlignment="Left" Height="37" Margin="34,88,0,0" VerticalAlignment="Top" Width="60" FontSize="20"/>
+        <Label Content="Min" HorizontalAlignment="Left" Height="37" Margin="34,148,0,0" VerticalAlignment="Top" Width="60" FontSize="20"/>
+        <TextBox x:Name="Min" HorizontalAlignment="Left" Height="37" Margin="99,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" TextChanged="Min_TextChanged"/>
+        <Label Content="Время" HorizontalAlignment="Left" Height="37" Margin="235,44,0,0" VerticalAlignment="Top" Width="81" FontSize="20"/>
+        <TextBox x:Name="timemax" HorizontalAlignment="Left" Height="37" Margin="235,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" TextChanged="timemax_TextChanged"/>
+        <TextBox x:Name="timemin" HorizontalAlignment="Left" Height="37" Margin="235,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="84" TextChanged="timemin_TextChanged"/>
+        <TextBox x:Name="rezult" HorizontalAlignment="Left" Height="32" Margin="34,477,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="rezult_TextChanged"/>
 
     </Grid>
 </Window>
